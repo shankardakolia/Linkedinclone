@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "iPhone15ProMax": "npx react-native run-ios --simulator \"iPhone 15 Pro Max\"",
+    "iPhoneSE": "npx react-native run-ios --simulator \"iPhone SE (3rd generation)\"",
+    "Pixel7Pro": "npx react-native run-android --deviceId emulator-5554",
+    "Pixel3": "npx react-native run-android --deviceId emulator-5558",
+    "Pixel5": "npx react-native run-android --deviceId emulator-5556",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
