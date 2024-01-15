@@ -11,6 +11,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {THEME_COLOR, WHITE} from '../../utils/Colors';
+import {useNavigation} from '@react-navigation/native';
 
 const DATA = [
   {
@@ -42,6 +43,7 @@ const DATA = [
 const Welcome = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const flatlistRef = useRef();
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle={'dark-content'} />
@@ -121,7 +123,11 @@ const Welcome = () => {
             </TouchableOpacity>
           )}
           {currentIndex == DATA.length - 1 && (
-            <TouchableOpacity style={styles.nextBtn}>
+            <TouchableOpacity
+              style={styles.nextBtn}
+              onPress={() => {
+                navigation.navigate('Login');
+              }}>
               <Text style={[styles.btnText, {color: WHITE}]}>Continue</Text>
             </TouchableOpacity>
           )}
