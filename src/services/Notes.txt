@@ -1,0 +1,7 @@
+  308  npm i react-redux "@reduxjs/toolkit"
+  309  npm i @react-native-async-storage/async-storage
+  310  npm i yup
+  311  npm i formik
+
+npm i react-redux "@reduxjs/toolkit"
+npm i @react-native-async-storage/async-storage yup formik
